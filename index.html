@@ -55,6 +55,8 @@
                     <li>
                         <a href="#myProjects">Projects</a>
                     </li>
+
+                    <!-- Shows drop downmenu open on page load -->
                     <li class="open">
                         <!-- data-toggle invokes js plugin -->
                         <!-- caret class shows arrow-->
@@ -84,8 +86,8 @@
         </div>
         <!-- /.container -->
     </nav>
-`
-    <!-- Page Content -->
+
+    <!-- Page Content Intro Section -->
     <div class="container" id="intro">
         <div class="row">
             <div class="col-md-8 col-md-offset-2 text-center">
@@ -109,6 +111,9 @@
 
             </div>
         </div>
+
+ 
+        <!-- Skills Section -->
         <div class="container" id="skills">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center">
@@ -144,14 +149,18 @@
                </div>
             </div>
         </div>
-            <div id="myProjects" class="carousel">
 
+        <!-- Projects Section With Carousel -->
+            <div id="myProjects" class="carousel">
+                <!-- Carousel Setup reference to #myProjects -->
                 <ol class="carousel-indicators">
                     <li data-targer="#myProjects" data-slide-to= "0" class="active"></li>
                     <li data-targer="#myProjects" data-slide-to= "1"></li>
                     <li data-targer="#myProjects" data-slide-to= "2"></li>
                 </ol>
+                <!-- Carousel Links and Images -->
                 <div class="carousel-inner">
+
                     <div class="item active">
                         <a href="http://ridetrack.herokuapp.com/">
                         <img src="images/ridetrack.jpeg" atl="ridetrack" class="img-responsive">
@@ -179,9 +188,9 @@
                             <p>Travel Blog</p>
                         </div>
                     </div>
-
                 </div>
 
+                <!-- Carousel Flow Control -->
                 <a class="carousel-control left" href="#myProjects" data-slide ="prev">
                     <span class="icon-prev"></span>
                 </a>
@@ -190,51 +199,61 @@
                     <span class="icon-next"></span>
                 </a>
 
+                    <!-- end Carousel Class div -->
             </div>
 
-
+        <!-- Contact Section -->
         <div class="container" id="contactme">
+            <div class="row text-center">   
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <h1>Contact Me</h1>
+                </div>
+            </div>
+
             <div class="row text-center">
-                <h1>Contact Me</h1>
                  <div class="col-md-3 col-xs-12 text-center">
                     <a href="mailto:portfolio@humbertocalero.com">
-                    <i class="glyphicon glyphicon-envelope"></i>
-                    <blockquote>humberto.calero.2015@gmail.com</blockquote>
+                      <i class="glyphicon glyphicon-envelope"></i>
+                      <blockquote>humberto.calero.2015@gmail.com</blockquote>
                     </a>
-                </div>
-                <div class="col-md-3  col-xs-12 text-center">
+                 </div>
+
+                 <div class="col-md-3  col-xs-12 text-center">
                     <a href="tel:16784670370">
-                    <i class="glyphicon glyphicon-phone"></i>
-                    <blockquote>(678)467-0370</blockquote>
+                      <i class="glyphicon glyphicon-phone"></i>
+                      <blockquote>(678)467-0370</blockquote>
                     </a>
-                </div>
-                <div class="col-md-2 col-xs-6 text-center">
+                 </div>
+
+                 <div class="col-md-2 col-xs-6 text-center">
                      <a href="https://github.com/altairn5">
-                        <i class="fa fa-github"></i>
-                        <blockquote>GitHub</blockquote>
+                       <i class="fa fa-github"></i>
+                       <blockquote>GitHub</blockquote>
                      </a>
-                </div>
-                <div class="col-md-2 col-xs-6 text-center">
-                    <a href="https://www.linkedin.com/in/altairn5">
+                 </div>
+
+                 <div class="col-md-2 col-xs-6 text-center">
+                     <a href="https://www.linkedin.com/in/altairn5">
                         <i class="fa fa-linkedin-square"></i>
                         <blockquote>Linkedin</blockquote>
                      </a>
-                </div>
-                <div class="col-md-2 col-xs-6 text-center">
+                 </div>
+
+                 <div class="col-md-2 col-xs-6 text-center">
                     <a href="https://twitter.com/altairn5">
                         <i class="fa fa-twitter"></i>
                         <blockquote>Twitter</blockquote>
                     </a>
-
-                </div>
+                 </div>
+            
             </div>
+    <!-- /.container -->
         </div>
    
 
                            
                           
 
-    <!-- /.container -->
 
     <!-- jQuery Version 1.11.1 -->
     <script src="js/jquery.js"></script>
