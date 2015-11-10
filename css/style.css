@@ -47,35 +47,18 @@ body .container{
 	padding-top: 100px;
 }
 /*PROJECTS*/
-#projects{
-	background-color: black;
-	padding-top: 100px;
-}
-a{
-	color:#f05f40;
-	transition:all .35s;
-}
-.row.no-gutter {
-  margin-right: 0;
-  margin-left: 0;
-}
-.row.no-gutter > [class^="col-"],
-.row.no-gutter > [class*=" col-"] {
-  padding-right: 0;
-  padding-left: 0;
-}
-.portfolio-box{
-	display: block;
-	position: relative;
-	margin:auto;
-	max-width: 650px;
-}
+
 
 #myProjects img{
 	max-height: 500px;
 	width: 100%;
 }
-body h1{
+
+#myProjects p{
+	font-size: 35px;
+}
+
+body h1 {
   /*font-family: 'geogrotesque-regular';*/
   font-size: 50px;
   line-height: 80px;
@@ -97,7 +80,8 @@ body h1{
 }
 
 /*icons glyphicons to make them bigger
-standard font size in 14px in bootstrap so icons are also affected */
+standard font size in 14px in bootstrap so icons are also affected 
+use tag i instead of glyphicon as i am using fortawesome fonts as well */
 
 .row i{
 	font-size: 32px;
