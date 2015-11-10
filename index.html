@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bare - Start Bootstrap Template</title>
+
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+    body {
+        padding-top: 0px;
+        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }
+
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <!-- data-toggle is javascript plugin -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- my brand goes under navbar-brand bootstrap class -->
+                <a class="navbar-brand" href="#aboutme">Humberto Calero</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <!-- nav class unstyle the links -->
+                <!-- navbar-nav style link horizotally also check nav-pills and nav-tabs classes -->
+                <!-- navbar-right display link to the far right -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#myProjects">Projects</a>
+                    </li>
+                    <li class="open">
+                        <!-- data-toggle invokes js plugin -->
+                        <!-- caret class shows arrow-->
+                        <a href="#" data-toggle="dropdown">About<span class="caret"></span></a>
+                        <!-- bootstrap class dropdown menu -->
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#aboutme">About Me</a>
+                            </li>
+                            <li>
+                                <a href="#contactme">Contact Info</a>
+                            </li>
+                            <!-- class divider creates a separtion social media -->
+                            <li class="divider"></li>
+                            <li>
+                                <a href="https://github.com/altairn5">GitHub
+                                <i class="fa fa-github"></i>
+                                </a>
+                            </li>
+                            <li><a href="https://www.linkedin.com/in/altairn5">Linkedin <i class="fa fa-linkedin-square"></i></a></li>
+                            <li><a href="https://twitter.com/altairn5">Twitter <i class="fa fa-twitter"></i></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+`
+    <!-- Page Content -->
+    <div class="container" id="intro">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <h1>Humberto Calero, Web Developer</h1>
+                <ul class="lead">Developer | Driven | Team Mate</ul>
+                <ul>
+                   <!--  <p>Bootstrap v3.3.1</p>
+                    <p>jQuery v1.11.1</p> -->
+                </ul>
+            </div>
+        </div>
+        </div>
+        <!-- /.row -->
+        <div class="container" id="aboutme">
+            <div class="row text-center well well-lg">
+            <div class="col-md-8 col-md-offset-2 ">
+                <h1>About Me</h1>
+                <blockquote>Driven web developer, who is passionate about technology and the use of data as the ultimate tools for increasing productivity and problem solving. Currently looking for an opportunity to contribute my skills and excellent work ethic. Great believer in collaborative effort to achieve greater results.</blockquote>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="container" id="skills">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <h1>Skills</h1>
+                </div>
+            </div>
+            <div class"row">
+                <div class="col-md-3 col-md-offset-0.5 text-center">
+                    <i class="glyphicon glyphicon-briefcase"></i>
+                    <h3>Languages</h3>
+                    <blockquote>I keep myself up to date with the cutting edge languages such as HTML5, CSS3, Javascript, and Ruby.</blockquote>
+                </div>
+               <div class="col-md-3 col-md-offset-0.5 text-center">
+                    <h3>FrameWorks</h3>
+                   <blockquote>Node.js, Express, Rails, Angular</blockquote>
+               </div>
+               <div class="col-md-3 col-md-offset-0.5  text-center">
+                    <h3>Databases</h3>
+                   <blockquote>Mongoose, PostgreSQL, MySQL</blockquote>
+               </div>
+                <div class="col-md-3 col-md-offset-0.5 text-center">
+                    <h3>Libraries & APIs</h3>
+                    <blockquote>
+                        jQuery,
+                        Bootstrap,
+                        Google APIs,
+                        Uber API,
+                        OpenWeather API
+                   </blockquote>
+               </div>
+            </div>
+        </div>
+            <div id="myProjects" class="carousel">
+
+                <ol class="carousel-indicators">
+                    <li data-targer="#myProjects" data-slide-to= "0" class="active"></li>
+                    <li data-targer="#myProjects" data-slide-to= "1"></li>
+                    <li data-targer="#myProjects" data-slide-to= "2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <a href="http://ridetrack.herokuapp.com/">
+                        <img src="images/ridetrack.jpeg" atl="ridetrack" class="img-responsive">
+                        <div class="carousel-caption">
+                            <h1 class=>Ridetrack</h1>
+                            <p>Commute Cost Tracking App</p>
+                        </div>
+                        </a>
+                    </div>
+
+                     <div class="item">
+                        <a href="http://ga-gameon.herokuapp.com/">
+                        <img src="images/tennis.jpg" atl="gameon" class="img-responsive">
+                        <div class="carousel-caption">
+                            <h1>Game On</h1>
+                            <p>Think Tider, for sports</p>
+                        </div>
+                       </a>
+                    </div>
+
+                     <div class="item">
+                        <img src="images/ridetrack.jpeg" atl="ridetrack" class="img-responsive">
+                        <div class="carousel-caption">
+                            <h1>Ridetrack</h1>
+                            <p>Commute Cost Tracking App</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="carousel-control left" href="#myProjects" data-slide ="prev">
+                    <span class="icon-prev"></span>
+                </a>
+
+                 <a class="carousel-control right" href="#myProjects" data-slide ="next">
+                    <span class="icon-next"></span>
+                </a>
+
+            </div>
+
+
+        <div class="container" id="contactme">
+            <div class="row text-center">
+                <h1>Contact Me</h1>
+                 <div class="col-md-3 col-md-offset-0.5 text-center">
+                    <i class="glyphicon glyphicon-envelope"></i>
+                    <blockquote>humberto.calero.2015@gmail.com</blockquote>
+                </div>
+                <div class="col-md-3 col-md-offset-0.5 text-center">
+                    <i class="glyphicon glyphicon-phone"></i>
+                    <blockquote>(678)467-0370</blockquote>
+                </div>
+                <div class="col-md-3 col-md-offset-0.5 text-center">
+                     <i class="fa fa-github"></i>
+                    <blockquote>github/altairn5</blockquote>
+                </div>
+                <div class="col-md-3 col-md-offset-0.5 text-center">
+                    <i class="glyphicon glyphicon-envelope"></i>
+                    <blockquote>humberto.calero.2015@gmail.com</blockquote>
+                </div>
+            </div>
+        </div>
+   
+
+    <!-- /.container -->
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script> $('#myProjects').carousel({ interval: 1000 }) </script>
+
+</body>
+
+</html>
