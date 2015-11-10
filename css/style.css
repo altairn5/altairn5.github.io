@@ -1,7 +1,4 @@
-*{
-	margin:0;
-	padding:0; 
-}
+
 .navbar{
 	margin-bottom: 0;
 }
@@ -58,9 +55,12 @@ body .container{
 	font-size: 35px;
 }
 
-body h1 {
-  /*font-family: 'geogrotesque-regular';*/
-  font-size: 50px;
+h1{
+	font-size: 40px;
+}
+
+body h1{
+  font-family: 'Freight Sans Pro';*/
   line-height: 80px;
   font-weight: normal;
   letter-spacing: 1px;
@@ -69,7 +69,6 @@ body h1 {
   transition: all .4s;
 }
 
-
 #contactme{
 	background-color:white;
 	padding-top: 100px;
@@ -77,6 +76,12 @@ body h1 {
 }
 #contactme h1{
 	padding-bottom: 100px;
+	color: gray;
+
+}
+
+#contactme blockquote{
+	color: #337ab7;
 }
 
 /*icons glyphicons to make them bigger
@@ -84,7 +89,14 @@ standard font size in 14px in bootstrap so icons are also affected
 use tag i instead of glyphicon as i am using fortawesome fonts as well */
 
 .row i{
-	font-size: 32px;
+	font-size: 60px;
+	color: #337ab7;
 
 
 }
+
+#skills i{
+	font-size: 50px;
+}
+
+
