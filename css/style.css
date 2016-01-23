@@ -50,13 +50,10 @@ body .container{
 
 }
 
-#aboutme.container{
 
 
-
-}
-
-#aboutme{
+#aboutme .row{
+	padding-top: 100px;
 	height: 500px;
 	background-color: white;
 	
@@ -71,8 +68,8 @@ body .container{
 #profile img{
 	border-radius: 50%;
 	max-height: 500px;
-	height:250px;
-	width: 250px;
+	height:280px;
+	width: 280px;
 
 }
 
@@ -160,3 +157,182 @@ use tag i instead of glyphicon as i am using fortawesome fonts as well */
 }
 
 
+
+/*
+ 
+ Media Settings
+
+*/
+
+
+
+@media (max-width: 600px) {
+ 
+
+.navbar{
+	margin-bottom: 0;
+}
+
+.navbar .navbar-inverse .navbar-fixed-top{
+	height: 50px;
+	margin-bottom:0;
+	border:0;
+}
+.navbar .container{
+	height: 50px;
+
+}
+
+.navbar-inverse .navbar-nav{
+	/*color:#9d9d9d;*/
+	font-size: 18px;
+
+}
+
+body .container{
+	padding:0px;
+	height: 500px;
+	margin: 0;
+	width: 100%;
+
+}
+
+
+#intro.container{
+	height: 500px;
+
+}
+
+#intro{
+	background-image: url("https://images.unsplash.com/photo-1446062061624-594b6e3403d7?ixlib=rb-0.3.5&q=80&fm=jpg&s=385775fbab01df85cbf81ae1e610f6a4");
+	background-size: cover;
+	padding-top: 150px;
+}
+
+#intro h1{
+	color: #9d9d9d;
+	font-size: 23px;
+}
+
+#intro ul{
+	color: #9d9d9d;
+	font-size: 18px;
+	margin-right:35px;
+
+}
+
+
+
+#aboutme.row{
+	height: 500px;
+	background-color: white;
+	padding-top: -100px;
+	
+}
+#aboutme h2{
+	font-size:23px;
+}
+#aboutme blockquote{
+	font-size:15px;
+}
+
+#profile img{
+	border-radius: 50%;
+	max-height: 500px;
+	height:180px;
+	width: 180px;
+	margin-left: 100px;
+
+}
+
+/*Skills */
+
+#skills{
+	max-width: 100%;
+	background-color: #E5E8E3;
+	padding-top: 100px;
+}
+#skills h1{
+	font-size:23px;
+}
+#skills h3{
+	font-size:18px;
+}
+
+#skills 
+/*PROJECTS*/
+
+
+#myProjects img{
+	max-height: 500px;
+	width: 100%;
+}
+
+#myProjects p{
+	font-size: 23px;
+	color:#9d9d9d;
+}
+
+#myProjects h1{
+	color:#9d9d9d;
+}
+
+
+#myProjects .carousel-control .icon-next, #myProjects .carousel-control .icon-prev{
+	margin-top: -100px;
+	font-size:125px;
+	
+}
+
+body h1{
+  font-family: 'Freight Sans Pro';*/
+  line-height: 80px;
+  font-size: 23px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+#contactme{
+	background-color:#E5E8E3;
+	
+
+}
+#contactme h1{
+	padding-bottom: 20px;
+	color: inherit;
+
+
+}
+/*
+a{
+	color: #333 !important;
+}*/
+
+/*or*/
+
+#contactme blockquote{
+	color: #333;
+}
+
+/*icons glyphicons to make them bigger
+standard font size in 14px in bootstrap so icons are also affected 
+use tag i instead of glyphicon as i am using fortawesome fonts as well */
+
+.row i{
+	font-size: 20px;
+	color: #333;
+
+
+}
+
+#skills i{
+	font-size: 23px;
+}
+
+
+
+
+  }
