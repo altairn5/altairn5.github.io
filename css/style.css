@@ -168,27 +168,6 @@ use tag i instead of glyphicon as i am using fortawesome fonts as well */
 
 @media (max-width: 600px) {
  
-
-.navbar{
-	margin-bottom: 0;
-}
-
-.navbar .navbar-inverse .navbar-fixed-top{
-	height: 50px;
-	margin-bottom:0;
-	border:0;
-}
-.navbar .container{
-	height: 50px;
-
-}
-
-.navbar-inverse .navbar-nav{
-	/*color:#9d9d9d;*/
-	font-size: 18px;
-
-}
-
 body .container{
 	padding:0px;
 	height: 500px;
@@ -211,7 +190,7 @@ body .container{
 
 #intro h1{
 	color: #9d9d9d;
-	font-size: 23px;
+	font-size: 25px;
 }
 
 #intro ul{
@@ -223,17 +202,22 @@ body .container{
 
 
 
-#aboutme.row{
+
+#aboutme .row{
+	padding-top:10px;
 	height: 500px;
 	background-color: white;
-	padding-top: -100px;
+
+	
 	
 }
 #aboutme h2{
 	font-size:23px;
+	
 }
 #aboutme blockquote{
 	font-size:15px;
+
 }
 
 #profile img{
@@ -242,6 +226,7 @@ body .container{
 	height:180px;
 	width: 180px;
 	margin-left: 100px;
+	position:relative;
 
 }
 
@@ -250,11 +235,9 @@ body .container{
 #skills{
 	max-width: 100%;
 	background-color: #E5E8E3;
-	padding-top: 100px;
+	padding-top: 10px;
 }
-#skills h1{
-	font-size:23px;
-}
+
 #skills h3{
 	font-size:18px;
 }
@@ -287,7 +270,7 @@ body .container{
 body h1{
   font-family: 'Freight Sans Pro';*/
   line-height: 80px;
-  font-size: 23px;
+  font-size: 25px;
   font-weight: normal;
   letter-spacing: 1px;
   margin-bottom: 10px;
@@ -297,6 +280,7 @@ body h1{
 
 #contactme{
 	background-color:#E5E8E3;
+	padding-top: 10px;
 	
 
 }
