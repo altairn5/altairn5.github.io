@@ -167,6 +167,9 @@ use tag i instead of glyphicon as i am using fortawesome fonts as well */
 
 
 @media (max-width: 600px) {
+
+
+@media (max-width: 600px) {
  
 body .container{
 	padding:0px;
@@ -236,13 +239,22 @@ body .container{
 	max-width: 100%;
 	background-color: #E5E8E3;
 	padding-top: 10px;
+	height:600px;
 }
 
 #skills h3{
-	font-size:18px;
+	font-size:15px;
 }
 
-#skills 
+#skills blockquote{
+	font-size:15px;
+	padding:0px
+}
+
+#skills i{
+	font-size: 23px;
+}
+
 /*PROJECTS*/
 
 
@@ -297,8 +309,13 @@ a{
 
 /*or*/
 
+#contactme{
+	height:600px;
+}
+
 #contactme blockquote{
 	color: #333;
+	font-size:15px;
 }
 
 /*icons glyphicons to make them bigger
@@ -306,17 +323,15 @@ standard font size in 14px in bootstrap so icons are also affected
 use tag i instead of glyphicon as i am using fortawesome fonts as well */
 
 .row i{
-	font-size: 20px;
+	font-size: 23px;
 	color: #333;
 
 
 }
 
-#skills i{
-	font-size: 23px;
-}
 
 
 
 
   }
+
