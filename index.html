@@ -5,6 +5,7 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- assures that mobile view even if viewport != screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -16,6 +17,8 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
+
+
     <style>
     body {
         padding-top: 0px;
@@ -89,7 +92,7 @@
         </div>
         <!-- /.container -->
     </nav>
-
+<div class="body-wrapper">
     <!-- Page Content Intro Section -->
     <div class="container" id="intro">
         <div class="row">
@@ -108,7 +111,7 @@
         <!-- /.row -->
 
         <!-- About Me Session -->
-        <div class="container-fluid aboutme" id="aboutme">
+        <div class="container-fruid aboutme" id="aboutme">
             <div class="row">
             <div class="col-md-4 col-md-offset-2  col-sm-12 text-center about-text">
                 <h1>About Me</h1>
@@ -116,7 +119,9 @@
                 </div>
             <div class="col-md-4 col-md-offset-1 col-sm-12">
                 <div id="profile">
+                   <!--  <a href="images/profile.jpeg"> -->
                     <img src="images/profile.jpeg" class="img-responsive">
+                  <!--   </a> -->
                  </div>
             </div>
         </div>
@@ -266,13 +271,17 @@
     <!-- /.container -->
         </div>
    
-
+<!-- end body-wrapper -->
+</div>
                            
                           
 
 
     <!-- jQuery Version 1.11.1 -->
     <script src="js/jquery.js"></script>
+
+    <!-- Custom Javascript File -->
+    <script type="text/javascript"  src="js/app.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>

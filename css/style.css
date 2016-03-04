@@ -31,6 +31,12 @@ body .container{
 
 }
 
+/*Texting Contaner Border*/
+/*.container-fluid,
+.container{
+	border: 1px solid red;
+}*/
+
 
 #intro.container{
 	height: 700px;
@@ -60,6 +66,8 @@ body .container{
 	
 
 }
+
+
 
 #profile img{
 	border-radius: 50%;
@@ -164,14 +172,20 @@ use tag i instead of glyphicon as i am using fortawesome fonts as well */
 }
 
 
+#overlay{
+	background: rgba(0 , 0, 0, 0.7);
+	height: 100%;
+	width: 100%
+	position: absolute;
+	top:0;
+	left:0;
+}
 
 /*
  
  Media Settings
 
 */
-
-
 
 
 
