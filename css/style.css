@@ -1,359 +1,87 @@
-*{
-	box-sizing: border-box;
-}
-
-}
-.navbar{
-	margin-bottom: 0;
-}
-
-.navbar .navbar-inverse .navbar-fixed-top{
-	height: 50px;
-	margin-bottom:0;
+/* ================================= 
+  Mobile First Approach
+==================================== */
+/*
+html, body, h1, h2, h3, p, ol, ul, li, a{
+	padding:0;
 	border:0;
-}
-.navbar .container{
-	height: 50px;
+	margin:0;
 
-}
-
-.navbar-inverse .navbar-nav{
-	/*color:#9d9d9d;*/
-	font-size: 18px;
-
-}
-
-body .container{
-	padding:0px;
-	height: 500px;
-	margin: 0;
-	width: 100%;
-
-}
-
-/*Texting Contaner Border*/
-/*.container-fluid,
-.container{
-	border: 1px solid red;
 }*/
 
+/* ================================= 
+  Base Element Styles
 
-#intro.container{
-	height: 700px;
 
-}
+ ex: ; body,p,h1,h2,h3,a,img
 
-#intro{
-	background-image: url("https://images.unsplash.com/photo-1446062061624-594b6e3403d7?ixlib=rb-0.3.5&q=80&fm=jpg&s=385775fbab01df85cbf81ae1e610f6a4");
-	background-size: cover;
-	padding-top: 100px;
-}
+==================================== */
 
-#intro h1{
-	color: #9d9d9d;
-	font-size: 55px;
-}
 
-#intro ul{
-	color: #9d9d9d;
-	font-size: 32px;
+/* Sets Element's Width equal to content + padding + border using properyt box-sizing*/
 
-}
+* {
 
-#aboutme .row{
-	padding: 10% 0px;
-	background-color: white;
-	
+box-sizing:border-box;
 
 }
 
 
 
-#profile img{
-	border-radius: 50%;
-	max-height: 280px;
-	height:280px;
-	width: 280px;
-	margin: 0 auto;
 
-}
+/* ================================= 
+  Base Layout Styles
+==================================== */
 
-.about-text{
-	max-height: calc(500px-280px);
-}
+/* ---- Navigation ---- */
+/*ex: nav bars*/
 
-#aboutme blockquote{
-	font-size:18px;
-	
-}
+/* ================================= 
 
+NAVBAR{
 
-/*Skills */
-
-#skills{
-	max-width: 100%;
-	background-color: #E5E8E3;
-	padding-top: 100px;
-}
-/*PROJECTS*/
-
-
-#myProjects img{
-	max-height: 500px;
+	1)be sure to give the elements below a padding 
+	equal to the height of the navbar so it doesnot cover the 
+	keeps it fixed in one spot with relation
+	to the browser viewpoint no matter what
+	2) use z-index 
+	position: fixed;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.4);
+	Give 100% width
 	width: 100%;
-}
-
-#myProjects p{
-	font-size: 30px;
-	color:#9d9d9d;
-}
-
-#myProjects h1{
-	color:#9d9d9d;
-}
-
-
-#myProjects .carousel-control .icon-next, #myProjects .carousel-control .icon-prev{
-	margin-top: -100px;
-	font-size:125px;
-	
-}
-
-h1{
-	font-size: 50px;
-}
-
-body h1{
-  font-family: 'Freight Sans Pro';*/
-  line-height: 80px;
-  font-size: 50px;
-  font-weight: normal;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
-  -webkit-transition: all .4s;
-  transition: all .4s;
-}
-
-#contactme{
-	background-color:#E5E8E3;
-	padding-top: 100px;
-
-}
-#contactme h1{
-	padding-bottom: 100px;
-	color: inherit;
-
-
-}
-/*
-a{
-	color: #333 !important;
-}*/
-
-/*or*/
-
-#contactme blockquote{
-	color: #333;
-}
-
-/*icons glyphicons to make them bigger
-standard font size in 14px in bootstrap so icons are also affected 
-use tag i instead of glyphicon as i am using fortawesome fonts as well */
-
-.row i{
-	font-size: 60px;
-	color: #333;
-
+	this offset value sets the element at the very top of the
+	top: 0;
+	z-index: 1 ;
 
 }
 
-#skills i{
-	font-size: 50px;
-}
-
-
-#overlay{
-	background: rgba(0 , 0, 0, 0.7);
-	height: 100%;
-	width: 100%
-	position: absolute;
-	top:0;
-	left:0;
-}
-
-/*
- 
- Media Settings
-
-*/
+==================================== */
 
 
 
-
-@media (max-width: 767px) {
-
-.navbar-inverse .navbar-nav>li>a{
-	/*color:#9d9d9d;*/
-	font-size: 12px;
-
-}
- 
-body .container{
-	padding:0px;
-	height: 500px;
-	margin: 0;
-	width: 100%;
-
-}
-
-
-#intro.container{
-	height: 500px;
-
-}
-
-#intro{
-	background-image: url("https://images.unsplash.com/photo-1446062061624-594b6e3403d7?ixlib=rb-0.3.5&q=80&fm=jpg&s=385775fbab01df85cbf81ae1e610f6a4");
-	background-size: cover;
-	padding-top: 150px;
-}
-
-#intro h1{
-	color: #9d9d9d;
-	font-size: 25px;
-}
-
-#intro ul{
-	color: #9d9d9d;
-	font-size: 18px;
-	margin-right:35px;
-
-}
+/* ---- Layout Containers ---- */
 
 
 
-
-#aboutme .row{
-	padding:10px 0px;
-	background-color: white;
-
-	
-	
-}
-#aboutme h2{
-	font-size:23px;
-	
-}
-#aboutme blockquote{
-	font-size:15px;
-
-}
-
-#profile img{
-	border-radius: 50%;
-	max-height: 500px;
-	height:180px;
-	width: 180px;
-	position:relative;
-
-}
-
-/*Skills */
-
-#skills{
-	max-width: 100%;
-	background-color: #E5E8E3;
-	padding-top: 10px;
-	height:600px;
-}
-
-#skills h3{
-	font-size:15px;
-}
-
-#skills blockquote{
-	font-size:15px;
-	padding:0px
-}
-
-#skills i{
-	font-size: 23px;
-}
-
-/*PROJECTS*/
+/* ---- Page Elements ---- */
+/* logos */
 
 
-#myProjects img{
-	max-height: 500px;
-	width: 100%;
-}
+/* ================================= 
+  Media Queries
+==================================== */
 
-#myProjects p{
-	font-size: 23px;
-	color:#9d9d9d;
-}
+@media screen and (min-width: 768px){
 
-#myProjects h1{
-	color:#9d9d9d;
-}
-
-
-#myProjects .carousel-control .icon-next, #myProjects .carousel-control .icon-prev{
-	margin-top: -100px;
-	font-size:125px;
-	
-}
-
-body h1{
-  font-family: 'Freight Sans Pro';*/
-  line-height: 80px;
-  font-size: 25px;
-  font-weight: normal;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
-  -webkit-transition: all .4s;
-  transition: all .4s;
-}
-
-#contactme{
-	background-color:#E5E8E3;
-	padding-top: 10px;
-	
-
-}
-#contactme h1{
-	padding-bottom: 20px;
-	color: inherit;
-
-
-}
-/*
-a{
-	color: #333 !important;
-}*/
-
-/*or*/
-
-#contactme{
-	height:600px;
-}
-
-#contactme blockquote{
-	color: #333;
-	font-size:15px;
-}
-
-/*icons glyphicons to make them bigger
-standard font size in 14px in bootstrap so icons are also affected 
-use tag i instead of glyphicon as i am using fortawesome fonts as well */
-
-.row i{
-	font-size: 23px;
-	color: #333;
+/*use containers with 90%*/
 
 
 }
 
 
-  }
+@media (min-width: 1025px){
 
+/*use containers with 80%*/
+/*plus a max width in pixels in case the screen is huge*/
+
+}
