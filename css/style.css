@@ -1,40 +1,133 @@
 /* ================================= 
   Mobile First Approach
 ==================================== */
-/*
-html, body, h1, h2, h3, p, ol, ul, li, a{
-	padding:0;
-	border:0;
-	margin:0;
 
-}*/
 
 /* ================================= 
   Base Element Styles
-
-
- ex: ; body,p,h1,h2,h3,a,img
-
+ 		ex: ; body,p,h1,h2,h3,a,img
 ==================================== */
 
 
 /* Sets Element's Width equal to content + padding + border using properyt box-sizing*/
 
-* {
+h1,
+h2,
+h3,
+a,
+img,
+span,
+blockquote
+{
+    font-family: open-sans;
 
-box-sizing:border-box;
+    text-align: center;
+}
 
+h1
+{
+    font-size: 1.5em;
+}
+
+h2,
+h3,
+a,
+img,
+span,
+blockquote
+{
+    font-size: 1em;
 }
 
 
 
 
 /* ================================= 
-  Base Layout Styles
+      Base Layout Styles
 ==================================== */
 
-/* ---- Navigation ---- */
-/*ex: nav bars*/
+
+/* ---- Layout Containers ---- */
+
+
+.container
+{
+    width: 90%;
+    max-width: 100vw;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/* ================================= 
+  Flex Containers
+==================================== */
+
+.body-wrapper,
+.navbar,
+.navbar-ul,
+.navbar-media,
+.dropdown-menu,
+.intro,
+.aboutme,
+.aboutme-text,
+.aboutme-image,
+.skills,
+.skills-body,
+.skills-body-item,
+.myProjects,
+.carousel-inner,
+.contactme,
+.contactme-body,
+.contactme-body-item
+
+{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+
+/* ================================= 
+  Flex Items
+==================================== */
+
+
+
+
+
+.navbar,
+.navbar-ul,
+.navbar-media,
+.dropdown-menu,
+.intro,
+.intro-item,
+.aboutme,
+.aboutme-text,
+.aboutme-image,
+.skills,
+.skills-body,
+.skills-body-item,
+.myProjects,
+.carousel-inner,
+.contactme
+{
+    align-self: center;
+}
+
+/* ================================= 
+  			Navigation
+==================================== */
+
+
+
+/* ---- Nav Bar ---- */
+
 
 /* ================================= 
 
@@ -54,34 +147,94 @@ NAVBAR{
 	z-index: 1 ;
 
 }
-
 ==================================== */
 
+.navbar-drop
+{
+    display: none;
+}
 
 
-/* ---- Layout Containers ---- */
+
+
+
+/* ================================= 
+ 			Layout
+==================================== */
 
 
 
 /* ---- Page Elements ---- */
-/* logos */
 
 
 /* ================================= 
-  Media Queries
+   			Styling
 ==================================== */
 
-@media screen and (min-width: 768px){
 
-/*use containers with 90%*/
 
+
+
+/* Page Images */
+
+img
+{
+    width: 180px;
+    height: 180px;
+    max-height: 500px;
+
+    border-radius: 50%;
+    padding: 1em;
+}
+
+/* Make Picture Overlay*/
+
+#profile
+{
+ 	position: fixed;
+ 	top: 0; 
+ 	left: 0;
+	background: rgba(0,0,0,.6);
+	z-index:5;
+	width:100%; 
+	height:100%;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	
+
+}
+
+#profile img
+{
+	order: -1;
+	border-radius: 50%;
+	border-color: 1px solid white;
+	z-index:10;
+	max-height: 280px;
+	width: 180px;
+    height: 180px;
+	/* margin: auto;*/
 
 }
 
 
-@media (min-width: 1025px){
 
-/*use containers with 80%*/
-/*plus a max width in pixels in case the screen is huge*/
 
+
+/* ================================= 
+  			Media Queries
+==================================== */
+
+@media screen and (min-width: 768px)
+{
+    /*use containers with 90%*/
+}
+
+
+@media (min-width: 1025px)
+{
+    /*use containers with 80%*/
+    /*plus a max width in pixels in case the screen is huge*/
 }
