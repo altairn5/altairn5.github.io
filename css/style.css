@@ -62,8 +62,9 @@ blockquote
   Flex Containers
 ==================================== */
 
+
 .body-wrapper,
-.navbar,
+.port-header,
 .navbar-ul,
 .navbar-media,
 .dropdown-menu,
@@ -89,6 +90,41 @@ blockquote
     align-content: center;
     flex-wrap: wrap;
 }
+
+
+.intro{
+	order:-1;
+}
+
+.port-header{
+
+}
+
+
+
+.navbar{
+	width:100vw;
+	display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(1,1,1,0.6);	
+}
+
+.navbar-brand{
+	margin-right: auto;
+	padding:1em;
+
+}
+
+.navbar-ul{
+
+	padding:1em;
+
+
+}
+
+
 
 
 
@@ -175,7 +211,9 @@ NAVBAR{
 
 
 
-/* Page Images */
+
+
+/* Page Images Styles */
 
 img
 {
@@ -187,7 +225,7 @@ img
     padding: 1em;
 }
 
-/* Make Picture Overlay*/
+/* Images Overlay*/
 
 #profile
 {
@@ -222,6 +260,12 @@ img
 
 
 
+/*Contactme Styles*/
+.skills-body-item,
+.contactme-body-item{
+
+	padding-top:.5em;
+}
 
 /* ================================= 
   			Media Queries
