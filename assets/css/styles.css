@@ -1,0 +1,42 @@
+
+body h1, h2, h3, h4, h5, h6, p, .button {
+	font-family: "Open Sans", sans-serif;
+    line-height: 1.9em !important;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 200;
+    font-style: normal;
+
+}
+
+h2,
+.button{
+	text-transform: uppercase;
+
+
+}
+
+.button{
+	padding: 0.5em 1.5em !important;
+	margin-bottom:auto;
+}
+
+p{
+font-size: 1.25em !important;
+}
+
+#header{
+
+	display:flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+#header h1{
+	flex-basis: 50%;
+
+}
+
+
