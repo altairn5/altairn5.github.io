@@ -85,6 +85,8 @@
 		width: 960px;
 	}
 
+	/*FIRST MEDIA AREA*/
+
 	@media screen and (max-width: 1800px) {
 
 		.container.\31 25\25 {
@@ -214,6 +216,8 @@
 		}
 
 	}
+
+	/*ENDS FIRST MEDIA */
 
 /* Grid */
 
@@ -472,6 +476,8 @@
 	.\-1u {
 		margin-left: 8.33333%;
 	}
+
+	/* 2ND MEDIA AREA BEGINS*/
 
 	@media screen and (max-width: 1800px) {
 
@@ -1548,6 +1554,10 @@
 
 	}
 
+	/*END OF 2ND MEDIA AREA*/
+
+
+
 /* Basic */
 
 	body {
@@ -2467,13 +2477,15 @@
 		background-color: #1f1815;
 		background-attachment: scroll,								fixed;
 		/*background-image: url("images/overlay.png"), url("../../images/bg.jpg");*/
-		background-image:url("../../images/sanfrancisco.jpeg");
-		background-position: top left,							top left;
+		/*background-image:url("../../images/sanfrancisco.jpeg");*/
+		background-image:url("../../images/sfMe.jpg");
+		background-position: 80% 100%;
 		background-repeat: repeat,								no-repeat;
 		background-size: auto,								auto 100%;
 		color: rgba(255, 255, 255, 0.5);
 		height: 100%;
 		left: 0;
+		overflow:hidden;
 		padding: 8em 4em 0 0;
 		position: fixed;
 		text-align: center;
@@ -2843,6 +2855,8 @@
 		opacity: 1.0 !important;
 	}
 
+	/*MEDIA AREA BEGINS*/
+
 /* XLarge */
 
 	@media screen and (max-width: 1800px) {
@@ -2869,45 +2883,17 @@
 		/*customized*/
 				#header h1{
 					font-size: 1.25em;
-					padding-bottom: 1em;
 					white-space: nowrap;
 					overflow: hidden;
 					width: 30em;
 					display:hidden;
-					animation-timing-function: ease-out;
-					/*animation-delay: 5s;*/
-				 	-webkit-animation: type 5s steps(50, end);
-    				animation: type 5s steps(50, end);
-
+					
 				}
 
-				.blink{
-  					animation: blink 1s infinite;
-					}
-
-
 					#header h1 br {
-						/*display: none;*/
+						display: none;
 					}
-
-
-    				@keyframes type{
-  									from { width: 0; }
-									}
-
-					@keyframes type2{
-									  0%{width: 0;}
-									  50%{width: 0;}
-									  100%{ width: 100; } 
-									} 
-
-					@-webkit-keyframes type{
-											  from { width: 0; }
-											}
-					@keyframes blink{
-  										to{opacity: .0;}
-									}
-
+			
 
 		/* Footer 
 

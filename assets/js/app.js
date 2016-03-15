@@ -4,13 +4,21 @@
 
 	console.log("loading");
 
+	$('.pic').on('click',function(){
+
+		console.log('clicked');
+
+		$(window).location = "https://ga-gameon.herokuapp.com/";
 
 
-	$("#header").find("h1")
-		.css("font-size", "3em");
+	});
+
 		
 
 	if($(window).width() > 980){
+
+	$("#header").find("h1")
+		.css("font-size", "3em");
 
 	// var splashSF = "https://images.unsplash.com/photo-1423068728938-
 	// 				d506c096081e?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=
@@ -22,7 +30,6 @@
 	 						"z-index":"10",
 	 						"background-repeat": "no-repeat",
 	 						"background-size":"cover",
-	 						"display": "flex"
 	 					 };
 	 var $profileImage = $('.image.avatar');
 	 var $button;
@@ -30,8 +37,10 @@
 
 
 	 		$profileImage.hide();
-			$('#header').append($welcomeButton);
-			$('#header').css(overlayStyles);
+	 		// Initial Bottom Adjust space with Flex properties
+			$('#header').append($welcomeButton.css('margin-top','auto'));
+			$('#header').addClass('header');
+			$('#header.header').css(overlayStyles);
 
 
 
@@ -41,32 +50,28 @@
 
 			$(this).hide(2000);
 			$("#header").find("h1").animate({"font-size": "1.25em"},2000);
+			$("header").removeClass('header');
 
 				if($(window).width() < 1440){
+
 
 					$('#header').animate({
 											width:'30%',"z-index": "", 
 											"font-size": " 1.25em",
-											"background-image": "url('images/overlay.png')"+","+
-											"url('../../images/bg.jpg')"
-
 										}, 2000, function(){
 
-					$profileImage.show(800);
+					// $profileImage.show(800);
 					
 					});
 
 				}
 				else{
 						$('#header').animate({
-											width:'30%',"z-index": "", 
+											width:'35%',"z-index": "", 
 											"font-size": " 1.25em",
-											"background-image": "url('images/overlay.png')"+","+
-											"url('../../images/bg.jpg')"
-
 											}, 2000, function(){
 
-						$profileImage.show(800);
+						// $profileImage.show(800);
 					
 					});
 

@@ -1,6 +1,6 @@
 
 body h1, h2, h3, h4, h5, h6, p, .button {
-	font-family: "Open Sans", sans-serif;
+	font-family: , "Open Sans", sans-serif ;
     line-height: 1.9em !important;
     text-decoration: none;
     letter-spacing: 2px;
@@ -25,18 +25,90 @@ p{
 font-size: 1.25em !important;
 }
 
+header.header{
+	background-position: 20% 60% !important;
+	width:100% !important, 
+	z-index:10 !important,
+	background-repeat: no-repeat !important,
+	background-size:cover !important
+}
+
 #header{
 
 	display:flex;
 	flex-direction:column;
 	justify-content: center;
 	align-items: center;
+}
+
+
+
+#header a,
+#header h1
+/*#header span*/
+{
+	flex-grow: 0;
 
 }
 
-#header h1{
-	flex-basis: 50%;
+
+/*Animation */
+
+#header h1:nth-child(0n+2){
+	animation-timing-function: ease-out;
+	-webkit-animation: type 4s steps(50, end);
+	animation: type 4s steps(50, end);
+}
+
+#header h1:nth-child(0n+2)::after{
+	content:"";
+	padding-right:4em;
+}
+
+#header h1:nth-child(0n+4){
+	overflow: hidden;
+	animation-timing-function: linear;
+	-webkit-animation: type2 6s steps(50, end);
+	animation: type2 6s steps(50, end);	
+	
 
 }
+/*Needed an after pseudo element for the type effect*/
+#header h1:nth-child(0n+4)::after{
+	content:"";
+	padding-right: 4em;
+}
+
+.blink{
+	flex-grow: 0;
+		animation: blink 1s infinite;
+	}
+
+
+
+	@keyframes type{ 
+					  from { width: 0; } 
+					} 
+
+	@-webkit-keyframes type{
+							  from { width: 0; }
+							}
+
+	@keyframes type2{
+					  0%{width: 0;}
+					  50%{width: 0;}
+					  100%{width: 100;}
+					} 
+
+
+	@-webkit-keyframes type2{
+					  0%{width: 0;}
+					  50%{width: 0;}
+					  100%{ width: 100; } 
+					} 
+
+	@keyframes blink{
+							to{opacity: .0;}
+					}
 
 
