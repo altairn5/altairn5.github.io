@@ -29,35 +29,55 @@
 	 						"width":"100%", 
 	 						"z-index":"10",
 	 						"background-repeat": "no-repeat",
+	 						"background-position": "80% 100%"+,
 	 						"background-size":"cover",
 	 					 };
 	 var $profileImage = $('.image.avatar');
 	 var $button;
+	 var defaultStyling = { 
+		"background-color": "#1f1815",
+		"background-attachment": "scroll",
+	
+		"background-image": "url('../../images/sfMe.jpg')",
+		"background-position": "80% 100%!important",
+	"	background-repeat": "repeat"	,						
+		"background-size": "auto",						
+	"	color": "rgba(255, 255, 255, 0.5)",
+		"height": "100%",
+		"left": "0",
+		"overflow":"hidden",
+		"padding": "8em 4em 0 0",
+		"position": "fixed",
+		"text-align": "center",
+		"top": "0",
+		"width": "35%",
+		};
 
 
 
 	 		$profileImage.hide();
 	 		// Initial Bottom Adjust space with Flex properties
-			$('#header').append($welcomeButton.css('margin-top','auto'));
-			$('#header').addClass('header');
-			$('#header.header').css(overlayStyles);
+			$('header').addClass('header');
+			$('header').append($welcomeButton.css('margin-top','auto'));
+			$("header[class='header").css(overlayStyles);
 
 
 
-			$('#header').on('click' ,'.button', function(){
+			$('.header').on('click' ,'.button', function(){
 				
 
 
 			$(this).hide(2000);
-			$("#header").find("h1").animate({"font-size": "1.25em"},2000);
-			$("header").removeClass('header');
+			$(".header").find("h1").animate({"font-size": "1.25em"},2000);
+			// $("header").removeClass('header');
 
 				if($(window).width() < 1440){
 
 
-					$('#header').animate({
+					$("header[class='header").animate({
 											width:'30%',"z-index": "", 
 											"font-size": " 1.25em",
+											
 										}, 2000, function(){
 
 					// $profileImage.show(800);
@@ -66,7 +86,7 @@
 
 				}
 				else{
-						$('#header').animate({
+						$("header[class='header").animate({
 											width:'35%',"z-index": "", 
 											"font-size": " 1.25em",
 											}, 2000, function(){

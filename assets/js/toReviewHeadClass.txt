@@ -1,0 +1,99 @@
+
+	$(document).ready(function(){
+
+
+	console.log("loading");
+
+	$('.pic').on('click',function(){
+
+		console.log('clicked');
+
+		$(window).location = "https://ga-gameon.herokuapp.com/";
+
+
+	});
+
+		
+
+	if($(window).width() > 980){
+	$('header').addClass('head');
+		
+	$("header[class='head']").find("h1")
+		.css("font-size", "3em");
+
+	// var splashSF = "https://images.unsplash.com/photo-1423068728938-
+	// 				d506c096081e?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=
+	// 				e341c6befccdfd9ac529d4e1f52c2cb6";
+
+	var $welcomeButton = $('<a href="#" class="button">See More</a>');
+	// var overlayStyles = {	
+	//  						"width":"100%", 
+	//  						"z-index":"10",
+	//  						"background-repeat": "no-repeat",
+	//  						"background-size":"cover",
+	//  					 };
+	 var $profileImage = $('.image.avatar');
+	 var $button;
+
+
+
+	 		$profileImage.hide();
+	 		$("section[id='one']").hide();
+	 		// Initial Bottom Adjust space with Flex properties
+			$("header[class='head']").append($welcomeButton.css('margin-top','auto'));
+			
+			
+			// $("header[class='header']").css(overlayStyles);
+
+
+			$("header[class='head']").on('click' ,'.button', function(){
+				
+
+
+			$(this).hide(2000);
+
+			$("header[class='head']").find("h1").animate({"font-size": "1.25em"},2000);
+
+				if($(window).width() < 1440){
+
+			$("header[class='head']").switchClass('head', 'newClass' , 2000, "easeInOutQuad")
+
+					// $("header[class='head']").animate({
+					// 						width:'30%',"z-index": "", 
+					// 						"font-size": " 1.25em",
+					// 					}, 2000, function(){
+
+					// 	$("header").toggleClass('head');
+					// 	$("section[id='one']").show();
+					
+					// });
+
+				}
+				else{
+
+				$("header[class='head']").switchClass('head', 'newClass' , 2000, "easeInOutQuad")
+						// $("header[class='head']").animate({
+						// 					width:'35%',"z-index": "", 
+						// 					"font-size": " 1.25em"
+						// 					}, 2000, function(){
+
+						// $("header").toggleClass('head');
+						// $("section[id='one']").show();
+					
+					// });
+
+				}
+
+
+			// $("header").hide('.header');
+
+
+
+			})
+			
+			
+		}
+
+	})
+
+
