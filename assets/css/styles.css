@@ -96,10 +96,57 @@ font-size: 1.25em !important;
 	@keyframes blink{
 							to{opacity: .0;}
 					}
-@media screen and (min-width: 1280px){
+
+@media screen and (min-width: 767px){
+
+
+a.work-item{
+	display:flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+a.image.fit.thumb{
+	margin:0;
+	flex: 1 1 auto;
+	overflow: auto;
+	max-width: 19em;
+	max-height: 11.50em;
+}
+
+}
+
+
+@media screen and (min-width: 1279px){
 
 /*image only will be set this way for screensizes larger than 1280*/
 #header {
 	
 		background-position: 80% 60% !important;
+}
+
+
+
+a.work-item{
+	display:flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+a.image.fit.thumb{
+	margin:0;
+	flex: 1 1 auto;
+	overflow: auto;
+	max-width: 24em;
+	max-height: 14em;
+}
+
+footer .icons{
+	display:flex;
+	justify-content: center;
+}
+
+li .icon{
+
+
 }

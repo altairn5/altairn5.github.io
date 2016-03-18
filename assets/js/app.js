@@ -18,7 +18,7 @@
 	if($(window).width() > 1180){
 
 	$("#header").find("h1")
-		.css({"font-size": "3em","color":"#efefef"});
+		.css({"font-size": "3em","color":"#fffff"});
 
 
 		var $welcomeButton = $('<a href="#" class="button">See More</a>');
@@ -28,8 +28,6 @@
 	 						"width":"100%", 
 	 						"z-index":"10",
 	 						"background-image":"url('images/sfMe.jpg')",
-	 						// "background-position-x": "80%",
-  						// 	"background-position-y": "60%",
 	 						"background-repeat": "no-repeat",
 	 						"background-size":"cover",
 	 						"flex-direction": "column",
@@ -53,7 +51,11 @@
 
 
 			$(this).hide(2000);
-			$("#header").find("h1").animate({"font-size": "1.25em"},2000);
+			$("#header").find("h1").animate({"font-size": "1.25em"},2000, function(){
+				
+				$("#header").find("h1").removeAttr('style');
+
+			});
 	
 				if($(window).width() < 1440){
 
@@ -62,6 +64,8 @@
 											width:'30%',"z-index": "", 
 											"font-size": " 1.25em",
 											"background-size":"cover",
+											"align-items": "center",
+    										"justify-content": "flex-start",
 										}, 2000, function(){
 
 					$('#header').removeAttr('style')
@@ -73,9 +77,9 @@
 						$('#header').animate({
 											width:'35%',"z-index": "", 
 											"font-size": " 1.25em",
-											// "background-position-x": "80%",
-  									// 		"background-position-y": "100%",
 											"background-size":"cover",
+											"align-items": "center",
+    										"justify-content": "flex-start",
 											}, 2000, function(){
 
 						$('#header').removeAttr('style')
