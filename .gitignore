@@ -12,6 +12,7 @@
 /log/*
 !/log/.keep
 /tmp
+/backups/*
 
 .env
 # Ignore application configuration
