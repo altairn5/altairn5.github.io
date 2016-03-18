@@ -1600,7 +1600,7 @@
 		}
 
 	strong, b {
-		color: #787878;
+		color: #ffffff;
 		font-weight: 400;
 	}
 
@@ -2479,9 +2479,9 @@
 		/*background-image: url("images/overlay.png"), url("../../images/bg.jpg");*/
 		/*background-image:url("../../images/sanfrancisco.jpeg");*/
 		background-image:url("../../images/sfMe.jpg");
-		background-position: 80% 100%;
+		background-position: 80% 60% !important;
 		background-repeat: repeat,								no-repeat;
-		background-size: auto,								auto 100%;
+		background-size: cover;
 		color: rgba(255, 255, 255, 0.5);
 		height: 100%;
 		left: 0;
@@ -2491,16 +2491,16 @@
 		text-align: center;
 		top: 0;
 		width: 35%;
-		/*flex-direction: column;
+		flex-direction: column;
         display: flex;
         flex-wrap: wrap;
     	align-items: center;
-    	justify-content: center;*/
+    	justify-content: center;
 
 	}
 
 		#header strong, #header b {
-			/*color: #ffffff;*/
+			color: #ffffff;
 		}
 
 		#header h2, #header h3, #header h4, #header h5, #header h6 {
@@ -2846,7 +2846,7 @@
 
 	body.is-touch #header {
 		background-attachment: scroll;
-		background-size: auto, cover;
+		background-size: cover, auto;
 	}
 
 	body.is-touch .poptrox-popup .nav-next,
@@ -2942,7 +2942,7 @@
 			#header {
 				background-attachment: scroll;
 				background-position: top left, center center;
-				background-size: auto,		cover;
+				background-size: cover,		auto;
 				left: auto;
 				padding: 6em 4em;
 				position: relative;

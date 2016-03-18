@@ -15,83 +15,70 @@
 
 		
 
-	if($(window).width() > 980){
+	if($(window).width() > 1180){
 
 	$("#header").find("h1")
-		.css("font-size", "3em");
+		.css({"font-size": "3em","color":"#efefef"});
 
-	// var splashSF = "https://images.unsplash.com/photo-1423068728938-
-	// 				d506c096081e?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=
-	// 				e341c6befccdfd9ac529d4e1f52c2cb6";
 
-	var $welcomeButton = $('<a href="#" class="button">See More</a>');
-	var overlayStyles = {	
+		var $welcomeButton = $('<a href="#" class="button">See More</a>');
+		var overlayStyles = {	
+							"position":"fixed",
+							"top": "0",
 	 						"width":"100%", 
 	 						"z-index":"10",
+	 						"background-image":"url('images/sfMe.jpg')",
+	 						// "background-position-x": "80%",
+  						// 	"background-position-y": "60%",
 	 						"background-repeat": "no-repeat",
-	 						"background-position": "80% 100%"+,
 	 						"background-size":"cover",
+	 						"flex-direction": "column",
+							"display": "flex",
+							"flex-wrap": "wrap",
+							"align-items": "center",
+							"justify-content": "center",
 	 					 };
-	 var $profileImage = $('.image.avatar');
-	 var $button;
-	 var defaultStyling = { 
-		"background-color": "#1f1815",
-		"background-attachment": "scroll",
+	 	var $profileImage = $('.image.avatar');
+	 	var $button;
 	
-		"background-image": "url('../../images/sfMe.jpg')",
-		"background-position": "80% 100%!important",
-	"	background-repeat": "repeat"	,						
-		"background-size": "auto",						
-	"	color": "rgba(255, 255, 255, 0.5)",
-		"height": "100%",
-		"left": "0",
-		"overflow":"hidden",
-		"padding": "8em 4em 0 0",
-		"position": "fixed",
-		"text-align": "center",
-		"top": "0",
-		"width": "35%",
-		};
-
-
-
-	 		$profileImage.hide();
+	 	$profileImage.hide();
 	 		// Initial Bottom Adjust space with Flex properties
-			$('header').addClass('header');
-			$('header').append($welcomeButton.css('margin-top','auto'));
-			$("header[class='header").css(overlayStyles);
+			$('#header').append($welcomeButton.css('margin-top','auto'));
+			$('#header').css(overlayStyles);
 
 
 
-			$('.header').on('click' ,'.button', function(){
+			$('#header').on('click' ,'.button', function(){
 				
 
 
 			$(this).hide(2000);
-			$(".header").find("h1").animate({"font-size": "1.25em"},2000);
-			// $("header").removeClass('header');
-
+			$("#header").find("h1").animate({"font-size": "1.25em"},2000);
+	
 				if($(window).width() < 1440){
 
 
-					$("header[class='header").animate({
+					$('#header').animate({
 											width:'30%',"z-index": "", 
 											"font-size": " 1.25em",
-											
+											"background-size":"cover",
 										}, 2000, function(){
 
-					// $profileImage.show(800);
+					$('#header').removeAttr('style')
 					
 					});
 
 				}
 				else{
-						$("header[class='header").animate({
+						$('#header').animate({
 											width:'35%',"z-index": "", 
 											"font-size": " 1.25em",
+											// "background-position-x": "80%",
+  									// 		"background-position-y": "100%",
+											"background-size":"cover",
 											}, 2000, function(){
 
-						// $profileImage.show(800);
+						$('#header').removeAttr('style')
 					
 					});
 
