@@ -2539,7 +2539,8 @@
 		}
 
 			#footer .icons a {
-				color: #787878;
+				/*color: #787878;*/
+				color: #ffffff;
 			}
 
 		#footer .copyright {
