@@ -2343,7 +2343,8 @@
 		background-color: transparent;
 		border-radius: 0.35em;
 		border: solid 3px #efefef;
-		color: #787878 !important;
+	/*	color: #787878 !important;*/
+		color: #787878;
 		cursor: pointer;
 		display: inline-block;
 		font-weight: 400;
@@ -2882,7 +2883,7 @@
 
 		/*customized*/
 				#header h1{
-					font-size: 1.25em;
+					font-size: 1.35em;
 					white-space: nowrap;
 					overflow: hidden;
 					width: 30em;

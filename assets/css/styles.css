@@ -128,7 +128,7 @@ a.image.fit.thumb{
 }
 
 
-@media screen and (min-width: 1279px){
+@media screen and (min-width: 980px){
 
 /*image only will be set this way for screensizes larger than 1280*/
 #header {
