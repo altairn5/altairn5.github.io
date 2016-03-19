@@ -9,6 +9,9 @@ body h1, h2, h3, h4, h5, h6, p, .button {
 
 }
 
+
+/*Styles*/
+
 h2,
 .button{
 	text-transform: uppercase;
@@ -62,7 +65,7 @@ font-size: 1.25em !important;
 /*Needed an after pseudo element for the type effect*/
 #header h1:nth-child(0n+3)::after{
 	content:"";
-	padding-right: 4em;
+	padding-right: 5em;
 }
 
 .blink{
@@ -97,6 +100,14 @@ font-size: 1.25em !important;
 							to{opacity: .0;}
 					}
 
+
+/*scrolling*/
+
+a[id="two"]:target{
+
+}
+
+
 @media screen and (min-width: 767px){
 
 
@@ -117,15 +128,13 @@ a.image.fit.thumb{
 }
 
 
-@media screen and (min-width: 1279px){
+@media screen and (min-width: 980px){
 
 /*image only will be set this way for screensizes larger than 1280*/
 #header {
 	
 		background-position: 80% 60% !important;
 }
-
-
 
 a.work-item{
 	display:flex;
