@@ -27,14 +27,10 @@
 							"top": "0",
 	 						"width":"100%", 
 	 						"z-index":"10",
+	 						"text-align":"center",
 	 						"background-image":"url('images/sfMe.jpg')",
 	 						"background-repeat": "no-repeat",
 	 						"background-size":"cover",
-	 						"flex-direction": "column",
-							"display": "flex",
-							"flex-wrap": "wrap",
-							"align-items": "center",
-							"justify-content": "center",
 	 					 };
 	 	var $profileImage = $('.image.avatar');
 	 	var $button;
