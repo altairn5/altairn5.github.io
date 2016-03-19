@@ -1,5 +1,5 @@
 
-(function($){
+$(document).ready(function(){
 
 
 	console.log("loading");
@@ -92,6 +92,6 @@
 
 		
 
-	}(jQuery));
+	});
 
 
