@@ -124,7 +124,18 @@ a[id="two"]:target{
 
 /*}*/
 
-@media screen and (min-width: 1800px){
+@media screen and (min-width: 1280px){
+
+header#header h1:nth-child(0n+1)::after{
+	content:"";
+	padding-right: 6.25em;
+}
+
+/*Needed an after pseudo element for the type effect*/
+header#header h1:nth-child(0n+3)::after{
+	content:"";
+	padding-right: 5em;
+}	
 
 
 }
