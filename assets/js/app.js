@@ -4,17 +4,6 @@
 
 	console.log("loading");
 
-	$('.pic').on('click',function(){
-
-		console.log('clicked');
-
-		$(window).location = "https://ga-gameon.herokuapp.com/";
-
-
-	});
-
-		
-
 	if($(window).width() > 1180){
 
 	$("#header").find("h1")
@@ -58,10 +47,10 @@
 
 					$('#header').animate({
 											width:'30%',"z-index": "", 
-											"font-size": " 1.35em",
-											"background-size":"cover",
-											"align-items": "center",
-    										"justify-content": "flex-start",
+											// "font-size": " 1.35em",
+											// "background-size":"cover",
+											// "align-items": "center",
+    							// 			"justify-content": "flex-start",
 										}, 2000, function(){
 
 					$('#header').removeAttr('style')
@@ -72,10 +61,10 @@
 				else{
 						$('#header').animate({
 											width:'35%',"z-index": "", 
-											"font-size": " 1.35em",
-											"background-size":"cover",
-											"align-items": "center",
-    										"justify-content": "flex-start",
+											// "font-size": " 1.35em",
+											// "background-size":"cover",
+											// "align-items": "center",
+    							// 			"justify-content": "flex-start",
 											}, 2000, function(){
 
 						$('#header').removeAttr('style')
