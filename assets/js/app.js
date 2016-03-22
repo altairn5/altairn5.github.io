@@ -4,6 +4,7 @@ $(document).ready(function(){
 
 	console.log("loading");
 
+// Animation For Initial Page Load
 	if($(window).width() >= 1280){
 
 	$("#header").find("h1")
@@ -79,8 +80,27 @@ $(document).ready(function(){
 			
 		}
 
-		
+// Footer Icon Tittle Display On Mouse Hover
+$('a.icon').hover(function(e){
+    var title = $(this).attr('title');
+    $(this).data('tipText', title).removeAttr('title');
+    $('<span class="tooltip"></span>')
+    .text(title)
+    .appendTo('body')
+    .fadeIn('slow');
+}, function(){
+	$(this).attr('title', $(this).data('tipText'));
+    $('.tooltip').remove();
+}).mousemove(function(e){
 
-	});
+var mouseX = e.pageX;
+var mouseY = e.pageY - 60;
+$('.tooltip')
+.css({top: mouseY, left: mouseX})
+
+});
+
+}(jQuery));
+
 
 
