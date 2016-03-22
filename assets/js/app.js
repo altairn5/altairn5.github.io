@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 	console.log("loading");
 
-	if($(window).width() > 1180){
+	if($(window).width() >= 1280){
 
 	$("#header").find("h1")
 		.css({"font-size": "3em","color":"#fffff"});
@@ -26,7 +26,7 @@ $(document).ready(function(){
 	
 	 	$profileImage.hide();
 	 		// Initial Bottom Adjust space with Flex properties
-			$('#header').append($welcomeButton.css({'margin-top':'auto', 'color':'#ffffff',}));
+			$('#header').append($welcomeButton.css({'margin-top':'auto', 'color':'#ffffff', 'align-self':'center'}));
 			$('#header').css(overlayStyles);
 
 
