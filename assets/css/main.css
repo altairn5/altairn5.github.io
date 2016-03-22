@@ -2477,8 +2477,7 @@
 	#header {
 		background-color: #1f1815;
 		background-attachment: scroll,								fixed;
-		/*background-image:url("../../images/sfMe.jpg");*/
-		background-image:url("../../images/sfMeColor.png");
+		background-image:url("../../images/sfMe.jpg");
 		background-position: 80% 60% !important;
 		background-repeat: repeat,								no-repeat;
 		background-size: cover;
