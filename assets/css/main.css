@@ -2491,6 +2491,7 @@
 		text-align: center;
 		top: 0;
 		width: 35%;
+		min-height: 70vh;
 		flex-direction: column;
         display: flex;
         flex-wrap: wrap;
@@ -2879,6 +2880,7 @@
 			#header {
 				padding: 6em 3em 3em 3em;
 				width: 30%;
+
 			}
 
 		/*customized*/
@@ -2950,6 +2952,7 @@
 				text-align: center;
 				top: auto;
 				width: 100%;
+
 			}
 
 				#header h1 {
@@ -3124,6 +3127,10 @@
 			#header {
 				padding: 4.5em 1.5em;
 			}
+
+			#header h1{
+					font-size: 1em;
+				}
 
 				#header h1 br {
 					display: none;
