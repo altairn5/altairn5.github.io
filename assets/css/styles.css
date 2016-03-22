@@ -62,7 +62,7 @@ font-size: 1.25em !important;
 
 #header h1:nth-child(0n+1)::after{
 	content:"";
-	padding-right:6em;
+	padding-right:6.25em;
 }
 
 #header h1:nth-child(0n+3){
