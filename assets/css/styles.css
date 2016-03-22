@@ -30,9 +30,7 @@ h2,
 
 }
 
-p{
-font-size: 1.25em !important;
-}
+
 
 .button{
 	padding: 0.5em 1.5em !important;
@@ -48,6 +46,18 @@ font-size: 1.25em !important;
 	flex-grow: 0;
 
 }
+
+
+/*scrolling*/
+
+a[id="two"]:target{
+
+}
+/*#header span*/
+
+
+/*@media screen and (min-width: 1280px){*/
+
 
 
 /*Animation */
@@ -112,29 +122,10 @@ font-size: 1.25em !important;
 					}
 
 
-/*scrolling*/
+/*}*/
 
-a[id="two"]:target{
+@media screen and (min-width: 1800px){
 
-}
-
-
-@media screen and (min-width: 767px){
-
-
-a.work-item{
-	display:flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-}
-
-a.image.fit.thumb{
-	margin:0;
-	flex: 1 1 auto;
-	overflow: auto;
-	max-width: 19em;
-	max-height: 11.50em;
-}
 
 }
 
@@ -144,8 +135,19 @@ a.image.fit.thumb{
 /*image only will be set this way for screensizes larger than 1280*/
 #header {
 	
-		background-position: 80% 60% !important;
+background-position: 80% 60% !important;
 }
+
+ #header h1:nth-child(0n+1)::after{
+	padding-right:0;
+}
+
+
+/*Needed an after pseudo element for the type effect*/
+#header h1:nth-child(0n+3)::after{
+	padding-right: 0;
+}
+
 
 a.work-item{
 	display:flex;
@@ -170,3 +172,39 @@ li .icon{
 
 
 }
+
+
+@media screen and (min-width: 667px){
+
+p{
+font-size: 1.25em !important;
+}
+
+
+a.work-item{
+	display:flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+a.image.fit.thumb{
+	margin:0;
+	flex: 1 1 auto;
+	overflow: auto;
+	max-width: 19em;
+	max-height: 11.50em;
+}
+
+}
+
+/*@media screen and (max-width: 736px){
+
+#header h1{
+	font-size: 1em !important;
+	align-self: center;
+
+}
+
+
+}*/
+
